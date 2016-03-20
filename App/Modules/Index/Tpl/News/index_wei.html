@@ -1,0 +1,107 @@
+<include file = "Common:head" />
+
+<div class="banner2">
+   <ul>
+      <li><img src="__PUBLIC__/images/n_banner5.jpg" /></li>
+   </ul>
+</div>
+<div class="main_auto">
+   <div class="main_auto_l" id="tab">
+        <h4>新闻中心News</h4>
+		<ul>
+		    <li class="active2"><a onClick="selectTag('div1',this)"  href="javascript:void(0)" onFocus="this.blur()">公司新闻</a></li>
+			<li><a onClick="selectTag('div2',this)"  href="javascript:void(0)" onFocus="this.blur()">行业动态</a></li>
+			<li><a onClick="selectTag('div3',this)"  href="javascript:void(0)" onFocus="this.blur()">政策法规</a></li>
+		</ul>
+   </div>
+   <div class="main_auto_r" id="div1" style="display:block;">
+       <h4><span><a href="index.html">首页</a>-<a href="__APP__/Index/News/index.html">新闻中心</a>-<a href="#">公司新闻</a></span></h4>
+	   <ul class="news_list">
+	   	<if condition='$list_n'>
+	   	<volist name='list_n' id='news'>	
+	      <li>
+	      	<div class="news_tp">
+	      	<a href="{:U(GROUP_NAME.'/News/index_show', array('id' => $news['id']))}">{$news.title}</a>
+	      	<span>{$news.addtime|date='y-m-d h:i:s', ###}</span>
+	        </div>
+	      </li>
+	    </volist>
+	    <else/>
+	    暂无内容
+	    </if>
+	        <br style="clear:both;" />
+	    </ul>
+	   <div class="page">
+	       <p>{$page_n}</p>
+	       <br style="clear:both;" />
+	   </div>
+   </div>
+   <div class="main_auto_r" id="div2" style="display:none;">
+       <h4><span><a href="index.html">首页</a>-<a href="__APP__/Index/News/index.html">新闻中心</a>-<a href="#">行业动态</a></span></h4>
+	   <ul>
+	   	<if condition='$list_h'>
+	   	<volist name='list_h' id='news'>	
+	      <li><a href="{:U(GROUP_NAME.'/News/index_show', array('id' => $news['id']))}">{$news.title}</a><span>{$news.addtime|date='y-m-d h:i:s', ###}</span></li>
+	    </volist>
+	    <else/>
+	    暂无内容
+	    </if>
+	        <br style="clear:both;" />
+	    </ul>
+	   <div class="page">
+	       <p>{$page_h}</p>
+	       <br style="clear:both;" />
+	   </div>
+   </div>
+   <div class="main_auto_r" id="div3" style="display:none;">
+       <h4><span><a href="index.html">首页</a>-<a href="__APP__/Index/News/index.html">新闻中心</a>-<a href="#">政策法规</a></span></h4>
+	   <ul>
+	   	<if condition='$list_z'>
+	   	<volist name='list_z' id='news'>	
+	      <li><a href="{:U(GROUP_NAME.'/News/index_show', array('id' => $news['id']))}">{$news.title}</a><span>{$news.addtime|date='y-m-d h:i:s', ###}</span></li>
+	    </volist>
+	    <else/>
+	    暂无内容
+	    </if>
+	        <br style="clear:both;" />
+	    </ul>
+	   <div class="page">
+	       <p>{$page_z}</p>
+	       <br style="clear:both;" />
+	   </div>
+</div>
+<script>
+	function selectTag(showContent,selfObj){
+  // 操作标签
+  var tag = document.getElementById("tab").getElementsByTagName("li");
+  //selfObj.parentNode.className = "selectTag";
+  $(selfObj).parent().addClass('active2').siblings().removeClass('active2');
+  // 操作内容
+  for(i=1; j=document.getElementById("div"+i);i++){
+    j.style.display = "none";
+  }
+  document.getElementById(showContent).style.display = "block";
+}
+</script>
+<include file = "Common:foot" />
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,194 @@
+@import './common.css';
+
+/**********头部**********/
+#top {
+	height:100px;
+	background:url(../images/top_bg.png) repeat-x;
+}
+#top .t_title {
+	height:74px;
+	line-height:84px;
+	margin-left: 540px;
+	font-size: 30px;
+	font-weight: bold;
+	overflow: hidden;
+	display: none;
+}
+#top .menu {
+	height: 26px;
+	overflow: hidden;
+	display: none;
+}
+#top .menu #map {
+	width:78px;
+	height:25px;
+	float: left;
+	margin: 0 10px;
+	background: url(../images/lbtn.png) no-repeat 0 0;
+}
+#top .menu ul {
+	float: left;
+}
+#top .menu li {
+	text-align: center;
+	height: 26px;
+	float: left;
+}
+#top .menu li a {
+	display: block;
+	height:26px;
+	color:#555555;
+	padding-left: 26px;
+
+}
+#top .menu li a span {
+	display:block;
+	height:26px;
+	line-height:26px;
+	padding:0 5px;
+
+}
+#top .menu .first_cur a {
+	padding-left:9px;
+}
+
+#top .menu .first_cur a {
+	background-position: 0 -81px;
+}
+#top .menu .first_cur a span {
+	display: block;
+	float: left;
+	width:78px;
+	height:24px;
+	margin-left:220px;
+	background:url(../images/lbtn0.png) no-repeat 0 -25px;
+}
+
+#top .menu .last_cur a {
+	padding-left:9px;
+}
+
+#top .menu .last_cur a {
+	background-position: 0 -81px;
+}
+#top .menu .last_cur a span {
+	display: block;
+	float: left;
+	width:78px;
+	height:24px;
+	margin-left:0px;
+	background:url(../images/lbtn1.png) no-repeat 0 -25px;
+}
+
+#top #user {
+	height:26px;
+	float:right;
+	color: rgb(30, 144, 255);;
+}
+#top #user .user_state {
+	display: block;
+	height:26px;
+	line-height:26px;
+	float: left;	
+}
+#top #user .user_state span {
+	color:rgb(30, 144, 255);;
+	font-weight:bold;
+}
+#top #user #web {
+	display: block;
+	float: left;
+	width:78px;
+	height:25px;
+	margin-right: 10px;
+	background:url(../images/lbtn.png) no-repeat 0 -25px;
+}
+#top #user #login_out {
+	display: block;
+	float: left;
+	width:68px;
+	height:25px;
+	margin-left:10px;
+	background:url(../images/lbtn.png) no-repeat 0 -50px;
+}
+/**********左侧**********/
+#left {
+	width:200px;
+	float: left;
+	overflow-x:hidden;
+	overflow-y:auto;
+	background:#dcdcdc;
+	border-top:1px solid #BBBAB9;
+	border-right:1px solid #BBBAB9;
+	border-radius: 0 8px 0 0;
+}
+#left .nav {
+	width:200px;
+	height:40px;
+	overflow:hidden;
+	position:relative;
+	background:url(../images/nav.png) repeat-x;
+}
+#left .nav_u {
+	height:40px;
+	line-height: 40px;
+	font-weight:bold;
+	position:relative;
+}
+#left .pos {
+	position:relative;
+	text-indent: 2em;
+}
+#left .nav span {
+	text-decoration:none;
+	display:block;
+	color:#3A66B0;
+	cursor: pointer;
+	font-size:14px;
+}
+#left .nav_ub {
+	width:100%;
+	height:26px;
+	position:absolute;
+	top:0px;
+	background-color:#dcdcdc;
+}
+#left .nav_db {
+	width:100%;
+	height:14px;
+	position:absolute;
+	bottom:0px;
+	background:#dcdcdc;
+}
+#left .option {
+	width: 200px;
+	height: auto;
+	overflow: hidden;
+	border-bottom: 1px solid #BBBAB9;
+	border-top: 1px solid #BBBAB9;
+	background-color: #dcdcdc;
+	display: none;
+}
+#left .option li {
+	width: 160px;
+	height: 20px;
+	line-height: 20px;
+	padding:5px 20px;
+}
+#left .option li a {
+	display: block;
+	height:20px;
+	float: right;
+	text-align: right;
+	color:#670768;
+	padding:0 5px 0 15px;
+}
+#left .option li a:hover {
+	background:url(../images/list.png) no-repeat 0 6px;
+}
+
+/**********右侧**********/
+#right {
+	float: left;
+	overflow: hidden;
+}

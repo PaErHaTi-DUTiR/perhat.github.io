@@ -1,0 +1,29 @@
+<div class="footer">
+    <a href="#">关于我们</a><a href="#">新闻中心</a><a href="#">服务中心</a><a href="#">产品中心</a><a href="#">联系我们</a></br>
+    CopyRight 2016 All Right Reserved 版权所有:纳可西湾手工地毯有限公司 新ICP备
+</div>
+<script src="__PUBLIC__/js/jquery-2.0.3.min.js" type="text/javascript"></script>   
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $(".side ul li").hover(function(){
+        $(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#db3652"})    
+    },function(){
+        $(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})   
+    });
+    
+});
+
+//回到顶部
+function goTop(){
+    $('html,body').animate({'scrollTop':0},600);
+}
+</script>
+<div class="side">
+    <ul>
+        <li><a href="#"><div class="sidebox"><img src="__PUBLIC__/images/side_icon01.png">客服中心</div></a></li>
+        <li><a href="javascript:void(0);" ><div class="sidebox"><img src="__PUBLIC__/images/side_icon04.png">QQ客服</div></a></li>
+        <li><a href="javascript:void(0);" ><div class="sidebox"><img src="__PUBLIC__/images/side_icon03.png">新浪微博</div></a></li>
+        <li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="__PUBLIC__/images/side_icon05.png"></a></li>
+    </ul>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>系统信息</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/copy.css" />
+	<script type="text/javascript" src='__PUBLIC__/js/jquery-1.8.2.min.js'></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			$('#main').fadeIn(2000);
+		}
+	</script>
+</head>
+<body>
+	<div id='main'>
+		<dl>
+			<dt>个人信息</dt>
+			<dd>上一次登录时间：<span>{$Think.session.logintime}</span></dd>
+			<dd>上一次登录IP：<span>{$Think.session.loginip}</span></dd>
+			<dd>本次登录时间：<span>{$Think.session.now}</span></dd>
+			<dd>本次登录IP：<span>{:get_client_ip()}</span></dd>
+		</dl>
+		<dl>
+			<dt>服务器信息</dt>
+			<dd>操作系统：<span>{$Think.const.PHP_OS}</span></dd>
+			<dd>PHP版本： <span>{$Think.const.PHP_VERSION}</span></dd>
+			<dd>服务器环境：<span>{$Think.server.SERVER_SOFTWARE}</span></dd>
+			<dd>MySQL版本：<span>{:mysql_get_server_info()}</span></dd>
+		</dl>
+		<dl>
+			<dt>订单信息</dt>
+			<dd>未处理订单：<span>{$xcount}</span>条</dd>
+			<dd>订单总数：<span>{$count}</span>条</dd>
+		</dl>
+		<dl>
+			<dt>版权信息</dt>
+			<dd>版权所有：和田市纳可西湾手工地毯开发有限公司</dd>
+			<dd>系统开发：帕尔哈提·吐拉江</dd>
+			<dd>联系 QQ：469022278</dd>
+			<dd>联系手机：15603062627</dd>
+		</dl>
+	</div>
+</body>
+</html>

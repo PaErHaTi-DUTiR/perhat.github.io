@@ -1,0 +1,137 @@
+<include file = "Common:head" />
+
+<div class="banner2">
+   <ul>
+      <li><img src="__PUBLIC__/images/n_banner5.jpg" /></li>
+   </ul>
+</div>
+<div class="main_auto">
+   <div class="main_auto_l" id="tab">
+        <h4>产品中心Product</h4>
+		<ul>
+		    <li class="active2"><a onClick="selectTag('div1',this)"  href="javascript:void(0)" onFocus="this.blur()">360道地毯</a></li>
+			<li><a onClick="selectTag('div2',this)"  href="javascript:void(0)" onFocus="this.blur()">540道地毯</a></li>
+			<li><a onClick="selectTag('div3',this)"  href="javascript:void(0)" onFocus="this.blur()">720道地毯</a></li>
+			<li><a onClick="selectTag('div4',this)"  href="javascript:void(0)" onFocus="this.blur()">丝绸地毯</a></li>
+		</ul>
+   </div>
+   <div class="main_auto_rr" id="div1" style="display:block;">
+       <h4><span><a href="#">首页</a>-<a href="#">产品中心</a>-<a href="#">360道地毯</a></span></h4>
+	   <ul>
+	   	<if condition='$list_360'>
+	   	<volist name='list_360' id='production'>
+	   	   <li>
+	         <div class="cap">
+		       <div class="ca"><a href="{:U(GROUP_NAME.'/Production/product_info.html', array('id' => $production['id']))}"><img src="__ROOT__/uploads/Pic/{$production['medium']}"/></a></div>
+			   <div class="cp"><a href="{:U(GROUP_NAME.'/Production/product_info.html', array('id' =>   $production['id']))}">{$production['title']}</a></div>
+		     </div>
+		  </li>
+	    </volist>
+	    <else/>
+	    暂无内容
+	   </if>
+	   </ul>
+	   <div class="page">
+	       <p>{$page_360}</p>
+	       <br style="clear:both;" />
+	   </div>
+   </div>
+   <div class="main_auto_rr" id="div2" style="display:none;">
+       <h4><span><a href="#">首页</a>-<a href="#">产品中心</a>-<a href="#">540道地毯</a></span></h4>
+	   <ul>
+	   	<if condition='$list_540'>
+	   	<volist name='list_540' id='production'>
+	   	   <li>
+	         <div class="cap">
+		       <div class="ca"><a href="{:U(GROUP_NAME.'/Production/product_info.html', array('id' => $production['id']))}"><img src="__ROOT__/uploads/Pic/{$production['medium']}"/></a></div>
+			   <div class="cp"><a href="{:U(GROUP_NAME.'/Production/product_info.html', array('id' =>   $production['id']))}">{$production['title']}</a></div>
+		     </div>
+		  </li>
+	    </volist>
+	    <else/>
+	    暂无内容
+	   </if>
+	   </ul>
+	   <div class="page">
+	       <p>{$page_540}</p>
+	       <br style="clear:both;" />
+	   </div>
+   </div>
+   <div class="main_auto_rr" id="div3" style="display:none;">
+       <h4><span><a href="#">首页</a>-<a href="#">产品中心</a>-<a href="#">720道地毯</a></span></h4>
+	   <ul>
+	   	<if condition='$list_720'>
+	   	<volist name='list_720' id='production'>
+	   	   <li>
+	         <div class="cap">
+		       <div class="ca"><a href="{:U(GROUP_NAME.'/Production/product_info.html', array('id' => $production['id']))}"><img src="__ROOT__/uploads/Pic/{$production['medium']}"/></a></div>
+			   <div class="cp"><a href="{:U(GROUP_NAME.'/Production/product_info.html', array('id' =>   $production['id']))}">{$production['title']}</a></div>
+		     </div>
+		  </li>
+	    </volist>
+	    <else/>
+	    暂无内容
+	   </if>
+	   </ul>
+	   <div class="page">
+	       <p>{$page_720}</p>
+	       <br style="clear:both;" />
+	   </div>
+   </div>
+   <div class="main_auto_rr" id="div4" style="display:none;">
+       <h4><span><a href="#">首页</a>-<a href="#">产品中心</a>-<a href="#">丝绸地毯</a></span></h4>
+	   <ul>
+	   	<if condition='$list_sichou'>
+	   	<volist name='list_sichou' id='production'>
+	   	   <li>
+	         <div class="cap">
+		       <div class="ca"><a href="{:U(GROUP_NAME.'/Production/product_info.html', array('id' => $production['id']))}"><img src="__ROOT__/uploads/Pic/{$production['medium']}"/></a></div>
+			   <div class="cp"><a href="{:U(GROUP_NAME.'/Production/product_info.html', array('id' =>   $production['id']))}">{$production['title']}</a></div>
+		     </div>
+		  </li>
+	    </volist>
+	    <else/>
+	    暂无内容
+	   </if>
+	   </ul>
+	   <div class="page">
+	       <p>{$page_sichou}</p>
+	       <br style="clear:both;" />
+	   </div>
+   </div>
+</div>
+<script>
+	function selectTag(showContent,selfObj){
+  // 操作标签
+  var tag = document.getElementById("tab").getElementsByTagName("li");
+  //selfObj.parentNode.className = "selectTag";
+  $(selfObj).parent().addClass('active2').siblings().removeClass('active2');
+  // 操作内容
+  for(i=1; j=document.getElementById("div"+i);i++){
+    j.style.display = "none";
+  }
+  document.getElementById(showContent).style.display = "block";
+}
+</script>
+<include file = "Common:foot" />
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

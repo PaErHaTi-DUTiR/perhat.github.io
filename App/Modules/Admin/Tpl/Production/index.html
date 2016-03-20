@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>产品列表</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/common.css" />
+	<script type="text/javascript" src='__PUBLIC__/js/jquery-1.8.2.min.js'></script>
+	<script type="text/javascript" src='__PUBLIC__/js/common.js'></script>
+</head>
+<body>
+	<div class='status'>
+		<span>产品列表</span>{$pic}
+	</div>
+	<table class="table" style="text-align:center;">
+		<tr>
+			<th>ID</th>
+			<th>产品分类</th>
+			<th>产品编号</th>
+			<th>产品图片预览</th>
+			<th>发布时间</th>
+			<th>操作</th>
+		</tr>
+		<foreach name='list' item='v'>
+			<tr>
+				<td>{$v.id}</td>
+				<td>{$v.type}</td>
+				<td>{$v.title}</td>
+				<td style="width:285px;">
+					<div style="height:175px; width:175px; margin-left:10px;"><img style="height:175px; width:265px;" src='__ROOT__/uploads/Pic/{$v.medium}'>
+                        </div>
+				</td>
+				<td>{$v.addtime|date='y-m-d H:i', ###}</td>
+				<td style="width:165px;">
+					<div style="width:160px; margin:auto;">
+					<a href="{:U('delPic', array('id' => $v['id']))}" class='del'></a>
+					<a href="{:U('savePic', array('id' => $v['id']))}" class='mod'></a>
+					</div>
+				</td>
+			</tr>
+		</foreach>
+		<tr>
+			<td colspan='7' align='center' height='60'>{$page}</td>
+		</tr>
+	</table>
+</body>
+</html>

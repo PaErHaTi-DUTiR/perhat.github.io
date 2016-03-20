@@ -1,0 +1,106 @@
+<include file = "Common:head" />
+<div class="banner2">
+   <ul>
+      <li><img src="__PUBLIC__/images/n_banner3.jpg" /></li>
+   </ul>
+</div>
+<div class="main_auto">
+   <div class="main_auto_l" id="tab">
+        <h4>人才中心About us</h4>
+		<ul>
+		    <li class="active2"><a onClick="selectTag('div1',this)"  href="javascript:void(0)" onFocus="this.blur()">招聘职位</a></li>
+			<li><a onClick="selectTag('div2',this)"  href="javascript:void(0)" onFocus="this.blur()">用人理念</a></li>
+		</ul>
+   </div>
+   <div class="main_auto_rg" id="div1" style="display:block;">
+       <h4><span><a href="#">首页</a>-<a href="#">人才中心</a>-<a href="#">招聘职位</a></span></h4>
+	   <ul> 
+			<div id="firstpane" class="menu_list">
+				<p class="menu_head current">1 工程技术经理</p>
+				<div class="menu_body">
+					<li>基本要求：男性，45岁以下</li>
+					<li>工作地点：西安市</li>
+					<li>招聘人数：1人</li>
+					<li>最低学历：大专及以上学历</li>
+					<li>任职要求：有5年以上楼宇智能化项目管理、监理、施工管理或安防、消防工程项目管理经验，熟练掌握安防、机电安装、楼宇自控、消防等技术，负责现场设计管理、质量管理、进度管理、投资管理等管理工作，做好与业主、设计、监理、施工等各方面的协调工作。能吃苦、能适应较强工作压力。</li>
+				</div>
+				<p class="menu_head current">1 工程技术经理</p>
+				<div class="menu_body">
+					<li>基本要求：男性，45岁以下</li>
+					<li>工作地点：西安市</li>
+					<li>招聘人数：1人</li>
+					<li>最低学历：大专及以上学历</li>
+					<li>任职要求：有5年以上楼宇智能化项目管理、监理、施工管理或安防、消防工程项目管理经验，熟练掌握安防、机电安装、楼宇自控、消防等技术，负责现场设计管理、质量管理、进度管理、投资管理等管理工作，做好与业主、设计、监理、施工等各方面的协调工作。能吃苦、能适应较强工作压力。</li>
+				</div>
+				<p class="menu_head current">1 工程技术经理</p>
+				<div class="menu_body">
+					<li>基本要求：男性，45岁以下</li>
+					<li>工作地点：西安市</li>
+					<li>招聘人数：1人</li>
+					<li>最低学历：大专及以上学历</li>
+					<li>任职要求：有5年以上楼宇智能化项目管理、监理、施工管理或安防、消防工程项目管理经验，熟练掌握安防、机电安装、楼宇自控、消防等技术，负责现场设计管理、质量管理、进度管理、投资管理等管理工作，做好与业主、设计、监理、施工等各方面的协调工作。能吃苦、能适应较强工作压力。</li>
+				</div>
+				<p class="menu_head current">1 工程技术经理</p>
+				<div class="menu_body">
+					<li>基本要求：男性，45岁以下</li>
+					<li>工作地点：西安市</li>
+					<li>招聘人数：1人</li>
+					<li>最低学历：大专及以上学历</li>
+					<li>任职要求：有5年以上楼宇智能化项目管理、监理、施工管理或安防、消防工程项目管理经验，熟练掌握安防、机电安装、楼宇自控、消防等技术，负责现场设计管理、质量管理、进度管理、投资管理等管理工作，做好与业主、设计、监理、施工等各方面的协调工作。能吃苦、能适应较强工作压力。管理、监理、施工管理或安防、消防工程项目管理经验，熟练掌握安防、机电安装、楼宇自控、消防等技术，负责现场设计管理、质量管理、进度管理、投资管理等管理工作，做好与业主、设计、监理、施工等各方面的协调工作。能吃苦、能适应较强工作压力</li>
+				</div>
+			</div><!--firstpane end-->
+	   </ul>
+   </div>
+   <div class="main_auto_rg" id="div2" style="display:none;">
+       <h4><span><a href="#">首页</a>-<a href="#">人才中心</a>-<a href="#">用人理念</a></span></h4>
+	   <ul>
+	      用人理念
+	   </ul>
+   </div>
+</div>
+<script>
+$(document).ready(function(){
+//幻灯片元素与类“menu_body”段与类“menu_head”时点击
+	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane p.menu_head").click(function(){
+		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});	
+});	
+
+	function selectTag(showContent,selfObj){
+  // 操作标签
+  var tag = document.getElementById("tab").getElementsByTagName("li");
+  //selfObj.parentNode.className = "selectTag";
+  $(selfObj).parent().addClass('active2').siblings().removeClass('active2');
+  // 操作内容
+  for(i=1; j=document.getElementById("div"+i);i++){
+    j.style.display = "none";
+  }
+  document.getElementById(showContent).style.display = "block";
+}
+</script>
+
+<include file = "Common:foot" />
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

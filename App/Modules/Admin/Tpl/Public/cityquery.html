@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type='text/javascript' src='jquery.js'></script>
+<script type='text/javascript' src='citylist.js'></script>
+<script type='text/javascript' src='querycity.js'></script>
+<link href='cityquery.css' rel="stylesheet" type="text/css" />
+<title>城市搜索</title>
+</head>
+<script type="text/javascript">
+var labelFromcity = new Array();
+labelFromcity ['热门城市'] = new Array(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40);
+labelFromcity ['A-F'] = new Array(0,3,4,5,6,28,29);
+labelFromcity ['G-J'] = new Array(1,7,8,9,30,31,32,33,37,40);
+labelFromcity ['K-N'] = new Array(10,11,12,34,35,38);
+labelFromcity ['P-W'] = new Array(13,14,15,16,17,18,22,24,25,36);
+labelFromcity ['X-Z'] = new Array(2,19,20,21,26,27,39);
+labelFromcity ['国际城市'] = new Array(41,42,43,44,45,46,47,48,49);
+var hotList = new Array(14,15,16,17,18,19);
+
+$(document).ready(function(){
+	$('#fromcity').querycity({'data':citysFlight,'tabs':labelFromcity,'hotList':hotList});
+	$('#tocity').querycity({'data':citysFlightTo});
+});
+</script>
+<body>
+<div style='margin:100px auto;width:900px' >
+<input id='fromcity' type='text' value='' />
+<input id='tocity' type='text' value='' /><br />
+<select>
+<option>看你能否挡住我犀利的眼神</option>
+<option>看你能否挡住我犀利的眼神</option>
+<option>看你能否挡住我犀利的眼神</option>
+<option>看你能否挡住我犀利的眼神</option>
+<option>看你能否挡住我犀利的眼神</option>
+<option>看你能否挡住我犀利的眼神</option>
+</select>
+</div>
+</html>
+

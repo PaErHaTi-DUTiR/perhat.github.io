@@ -1,0 +1,504 @@
+/* ------------ Copyright 2004-2005 ebossi.com - All Rights Reserved. ------------ */
+
+/* 网站链接总的css定义:可定义内容为链接字体颜色、样式等 */
+A:link {COLOR: #333; TEXT-DECORATION: none}
+A:visited {COLOR: #333; TEXT-DECORATION: none}
+A:hover   {COLOR: #3399CC; TEXT-DECORATION:underline;LEFT:1px;TOP:1px;POSITION:relative;}}
+A:active {COLOR: #333; TEXT-DECORATION: none}
+/* 顶部链接的css定义－调用代码为 */
+A.Top:link		{COLOR: #BBB}
+A.Top:visited	{COLOR: #BBB;TOP: 1px; TEXT-DECORATION: none}
+A.Top:hover		{COLOR: #888;position: relative; top: 1px; TEXT-DECORATION: none}
+A.Top:active	{COLOR: #BBB}
+/* 底部版权信息文字链接的css定义－调用代码为<a class='bottom' ***>***</a> */
+A.bottom:link    {color: #FDFDFD;}
+A.bottom:visited {color: #FDFDFD;TOP: 1px; TEXT-DECORATION: none}
+A.bottom:hover   {color: #EEE;position: relative; top: 1px; TEXT-DECORATION: none}
+A.bottom:active  {color: #FDFDFD;}
+
+BODY {
+MARGIN: 0px 0px; OVERFLOW-X: hidden; OVERFLOW-Y: scroll;
+BACKGROUND: #E7EBEF;
+background-image:url(../img/bg_all.gif);
+background-position:center;
+FONT-FAMILY: 'Lucida Grande','Lucida Sans Unicode','宋体','新宋体',arial,verdana,sans-serif;
+FONT-SIZE: 12px;
+/*SCROLLBAR-FACE-COLOR: #313884;
+SCROLLBAR-HIGHLIGHT-COLOR: #D7DAF1;
+SCROLLBAR-SHADOW-COLOR: #009aaa;
+SCROLLBAR-3DLIGHT-COLOR: #000000;
+SCROLLBAR-ARROW-COLOR: #ffffff;
+SCROLLBAR-TRACK-COLOR: #cccccc;
+SCROLLBAR-DARKSHADOW-COLOR: #000000; */
+}
+TD {
+FONT-FAMILY: 宋体;FONT-SIZE: 12px;LINE-HEIGHT: 15px;
+}
+TD.TableBody1 {
+BACKGROUND: #FFF;
+}
+.tableBorder1 {
+WIDTH: 100%; 
+BACKGROUND: #C5BDC5;
+BORDER-TOP: 1px;BORDER-BOTTOM: 1px;BORDER-LEFT: 1px;BORDER-RIGHT: 1px;
+}
+.table {
+BACKGROUND: #FFF;
+BORDER-RIGHT: 1px solid #333;BORDER-LEFT: 1px solid #333;BORDER-COLLAPSE: collapse;
+}
+/* 栏目导航发光阴影效果的css定义 */
+.Glow {
+filter: glow(color=D4F4FF, strength=1) dropshadow(color=cccccc, offx=1, offy=1,);
+WIDTH: 100%;
+COLOR: #007DA5;LINE-HEIGHT: 20px;
+}
+.GlowLeft {
+filter: glow(color=C3E1FF, strength=1) dropshadow(color=cccccc, offx=1, offy=1,);
+WIDTH: 100%;
+COLOR: #0066CC;LINE-HEIGHT: 20px; 
+}
+/* 文本框的css定义:对应css中的“input”，这里为文本框的风格设置，可定义内容为背景、字体、颜色、边框等 */
+Input {
+HEIGHT: 18px;
+/*background: #f3f3f3;*/
+PADDING: 1px;
+COLOR: #000;FONT-SIZE: 12px;
+BORDER-WIDTH: 1px;BORDER-COLOR: #CCC;
+}
+Textarea {
+PADDING: 1px;
+COLOR: #000;FONT-SIZE: 12px;
+BORDER-WIDTH: 1px;BORDER-COLOR: #CCC;
+}
+
+/* ------------ Copyright 2004-2005 ebossi.com - All Rights Reserved. ------------ */
+
+/* ==================TopLogoA3中的css定义================== */
+.TopLogoA3 {
+WIDTH: 766;
+BACKGROUND: #ECF0F1;
+PADDING-TOP: 5px; PADDING-BOTTOM: 5px;
+BORDER: 0px solid #D6DBDE;
+}
+/* ==================TopLogin3中的css定义================== */
+.TopLogin3 {
+WIDTH: 766;
+BORDER-BOTTOM: dashed 1px #ECF0F1;
+}
+.TopLogin3_Td1 {
+WIDTH: 169; HEIGHT: 31;
+BACKGROUND: url(topbgb.gif) repeat-x;
+COLOR: #0000FF;TEXT-ALIGN: center;VERTICAL-ALIGN: middle;
+}
+.TopLogin3_Td2 {
+WIDTH: 52;
+BACKGROUND: url(topb.gif) repeat-x;
+}
+.TopLogin3_Td3 {
+WIDTH: 539;
+PADDING-TOP: 3px;
+BACKGROUND: url(topbga.gif) repeat-x;
+}
+A.Menu1:link		{COLOR: #EEE}
+A.Menu1:visited	{COLOR: #EEE;TOP: 1px; TEXT-DECORATION: none}
+A.Menu1:hover		{COLOR: #BBB;position: relative; top: 1px; TEXT-DECORATION: none}
+A.Menu1:active	{COLOR: #EEE}
+/* ==================TopMenu2中的css定义================== */
+.TopMenu2 {
+WIDTH: 766;
+BACKGROUND: #ECF0F1;
+}
+.TopMenu2A {
+WIDTH: 100%;
+BACKGROUND: url(../../Img/Menu/BsMenu_bg.gif) #ECF0F1 repeat-x;
+}
+.TopMenu2B {
+WIDTH: 100%;
+PADDING-TOP: 2px;
+}
+.TopMenu2B_Td1 {
+WIDTH: 100%; HEIGHT: 6;
+COLOR: #BBB;
+}
+/* ==================TopLogoB1中的css定义================== */
+.TopLogoB1 {
+WIDTH: 766; HEIGHT: 0;
+BACKGROUND: #ECF0F1;
+}
+
+/* ------------ Copyright 2004-2005 ebossi.com - All Rights Reserved. ------------ */
+
+/* ==================网页中部中的css定义开始================== */
+.MiddleTitle {
+WIDTH: 766;
+BACKGROUND: #ECF0F1;
+PADDING-LEFT: 5px;PADDING-RIGHT: 5px;
+}
+.Middle_Title {
+WIDTH: 100%;
+}
+.TdDotted {
+HEIGHT: 1;
+/*BACKGROUND: url(../../img/naSzarym.gif) repeat-x;*/
+}
+
+/* ++++++++++++++++ 网页中部左栏的css定义开始 ++++++++++++++++ */
+
+/* ------------左栏表格总背景颜色定义------------ */
+.M_Left_Td {
+WIDTH: 188;
+}
+.M_Left_Title {
+WIDTH: 100%;
+BORDER: 0px;
+}
+/* ------------ */
+.ML_TitlePt {
+WIDTH: 186;
+BORDER: 0px;
+}
+.ML_TdPtbg {
+HEIGHT: 38;
+BACKGROUND: url(bj.gif) #FDFDFD repeat-x;
+PADDING-TOP:  3px;
+LETTER-SPACING: 1px;TEXT-ALIGN: center;
+BORDER-TOP: 1px solid #D6DBDE;BORDER-BOTTOM: 0px dashed #E5E5E2;BORDER-LEFT: 1px solid #D6DBDE;BORDER-RIGHT: 1px solid #D6DBDE;
+}
+.ML_Titlebg {
+WIDTH: 186;
+BACKGROUND: #FDFDFD;
+BORDER-TOP: 0px solid #E5E5E2;BORDER-BOTTOM: 1px solid #D6DBDE;BORDER-LEFT: 1px solid #D6DBDE;BORDER-RIGHT: 1px solid #D6DBDE;
+}
+.ML_Tdbg {
+HEIGHT: 23;
+LINE-HEIGHT: 150%;LETTER-SPACING: 1px;
+}
+.ML_TdImgLI {
+WIDTH: 25;
+BACKGROUND: url(b56.gif) 10px 6px no-repeat;
+}
+
+/* ++++++++++++++++ 网页中部左栏的css定义结束 ++++++++++++++++ */
+
+/* ------------网页中部中间格离栏------------ */
+.M_Jgx_TD {
+WIDTH: 2;
+}
+
+/* ++++++++++++++++ 网页中部右栏的css定义开始 ++++++++++++++++ */
+.M_Center_Title {
+WIDTH: 92%;
+BORDER: 0px;
+}
+/* ------------形像图表格定义------------ */
+.MC_ImgLogo {
+WIDTH: 560;
+PADDING-BOTTOM: 3px;
+BORDER: 0px;
+}
+.MC_ImgLogo_Td1 {
+WIDTH: 100%; HEIGHT: 0;
+BORDER: 0px;
+}
+/* ------------首页中栏中间标题表格背景、文字颜色定义------------ */
+.HomeMC_2TD{
+WIDTH: 277;
+}
+.HomeMC_Pt2_Title {
+WIDTH: 100%; HEIGHT: 32;
+BACKGROUND: url(bj.gif) #FDFDFD repeat-x;
+PADDING: 1px;
+LETTER-SPACING: 1px;
+BORDER-TOP: 1px solid #D6DBDE;BORDER-BOTTOM: 2px solid #3AAFF7;BORDER-LEFT: 1px solid #D6DBDE;BORDER-RIGHT: 1px solid #D6DBDE;
+}
+/* ------------首页中栏上边标题表格背景、文字颜色定义------------ */
+.MC_Pt_Title {
+WIDTH: 560; HEIGHT: 32;
+BACKGROUND: url(bj.gif) #FDFDFD repeat-x;
+COLOR: #000000;
+BORDER-TOP: 1px solid #D6DBDE;BORDER-BOTTOM: 2px solid #3AAFF7;BORDER-LEFT: 1px solid #D6DBDE;BORDER-RIGHT: 1px solid #D6DBDE;
+}
+.MC_Pt_TD1 {
+WIDTH: 8; HEIGHT: 32;
+}
+.MC_Pt_TD2 {
+WIDTH: 30; HEIGHT: 32;
+BACKGROUND: url(../Img/Star.gif) 1px 11px no-repeat;
+}
+.MC_Pt_TD3 {
+HEIGHT: 32;
+PADDING-TOP: 4px;
+LETTER-SPACING: 1px;
+}
+.MC_Pt_TD4 {
+HEIGHT: 32;
+PADDING-TOP: 4px;
+}
+.MC_Pt_TD5 {
+WIDTH: 11;HEIGHT: 32;
+TEXT-ALIGN: right;
+}
+.HomeMC_Pt_TD5 {
+WIDTH: 27;HEIGHT: 9;
+BACKGROUND: url(../Img/more.gif) center no-repeat;
+TEXT-ALIGN: right;
+}
+/* ------------公司简介栏内容表格背景、文字颜色定义------------ */
+.MC_CoNr_Title {
+WIDTH: 560; HEIGHT: 300;
+BACKGROUND: #FFF;
+PADDING: 7px;
+LINE-HEIGHT: 150%;
+BORDER: 1px solid #D6DBDE;
+}
+/* ------------新闻栏内容表格背景、文字颜色定义------------ */
+.MC_NewsNr_Title {
+WIDTH: 560; HEIGHT: 300;
+BACKGROUND: #FFF;
+PADDING: 5px;
+LINE-HEIGHT: 150%;
+BORDER: 1px solid #D6DBDE;
+}
+/* ------------产品栏内容表格背景、文字颜色定义------------ */
+.MC_PrNr_Title {
+WIDTH: 560; HEIGHT: 300;
+BACKGROUND: #FFF;
+PADDING: 5px;
+LINE-HEIGHT: 150%;
+BORDER: 1px solid #D6DBDE;
+}
+/* ------------产品Show栏表格背景、文字颜色定义------------ */
+.MC_PrShow_Title1 {
+WIDTH: 560;HEIGHT: 50;
+BACKGROUND: #CCC;
+BORDER: 0px;
+}
+.MC_PrShow_t1Tr1 {
+HEIGHT: 25;
+BACKGROUND: #DDFFD0;
+PADDING: 2px;
+LETTER-SPACING: 3px;TEXT-ALIGN: center;
+}
+.MC_PrShow_t1r1Td1 {
+WIDTH: 33%;
+}
+.MC_PrShow_t1r1Td3 {
+WIDTH: 33%;
+}
+.MC_PrShow_t1Tr2 {
+HEIGHT: 28;
+BACKGROUND: #FFF;
+PADDING: 2px;
+}
+.MC_PrShow_t1r2Td1 {
+WIDTH: 33%;
+}
+
+.MC_PrShow_Title2 {
+WIDTH: 560; HEIGHT: 45;
+PADDING: 3px;
+}
+.MC_PrShow_t2Tr1 {
+PADDING-TOP: 20px;
+COLOR: #191970;FONT-WEIGHT: bold;LETTER-SPACING: 3px;
+}
+.MC_PrShow_Title3 {
+WIDTH: 560;
+BACKGROUND: #FFF;
+PADDING: 5px;
+LINE-HEIGHT: 150%;
+BORDER: 1px solid #D6DBDE;
+}
+/* ------------下载栏内容表格背景、文字颜色定义------------ */
+.MC_DoNr_Title {
+WIDTH: 560; HEIGHT: 300;
+BACKGROUND: #FFF;
+LINE-HEIGHT: 150%;
+BORDER: 1px solid #D6DBDE;
+PADDING: 5px;
+}
+/* ------------下载Show栏表格背景、文字颜色定义------------ */
+.MC_DoShow_Title1 {
+WIDTH: 560; HEIGHT: 50;
+BACKGROUND: #CCC;
+BORDER: 0px;
+}
+.MC_DoShow_t1Tr1 {
+HEIGHT: 25;
+BACKGROUND: #DDFFD0;
+PADDING: 2px;
+FONT-WEIGHT: bold;
+}
+.MC_DoShow_t1Tr2 {
+WIDTH: 100%; HEIGHT: 28;
+BACKGROUND: #FFF;
+PADDING: 2px;
+}
+.MC_DoShow_t1r2Td1 {
+WIDTH: 55%;
+}
+.MC_DoShow_t1rnTd1 {
+WIDTH: 55%; HEIGHT: 28;
+BACKGROUND: #FFF;
+PADDING: 2px;
+}
+
+.MC_DoShow_Title2 {
+WIDTH: 560;
+PADDING: 3px;
+}
+.MC_DoShow_t2Tr1 {
+WIDTH: 100%; HEIGHT: 35;
+PADDING-TOP: 15;
+COLOR: #E33638; FONT-WEIGHT: bold; LETTER-SPACING: 3px;
+}
+.MC_DoShow_t2r2Td1 {
+WIDTH: 100%; HEIGHT: 25;
+BACKGROUND: #FFF;
+PADDING-LEFT: 5px;
+COLOR: #333; LINE-HEIGHT: 150%;
+BORDER: 1px solid #D6DBDE;
+}
+.MC_DoShow_t2Tr3 {
+WIDTH: 100%; HEIGHT: 35;
+PADDING-TOP: 15px;
+COLOR: #191970; FONT-WEIGHT: bold; LETTER-SPACING: 3px;
+}
+.MC_DoShow_t2r4Td1 {
+WIDTH: 100%;HEIGHT: 25;
+BACKGROUND: #FFF;
+PADDING: 5px;
+COLOR: #333;LINE-HEIGHT: 150%;
+BORDER: 1px solid #D6DBDE;
+}
+.MC_DoShow_t2Tr5 {
+WIDTH: 100%; HEIGHT: 35;
+PADDING-TOP: 15;
+COLOR: #3B5E2A; FONT-WEIGHT: bold; LETTER-SPACING: 3px;
+}
+.MC_DoShow_t2r6Td1 {
+WIDTH: 100%;HEIGHT: 25;
+BACKGROUND: #FFF;
+PADDING: 5px;
+COLOR: #333;LINE-HEIGHT: 150%;
+BORDER: 1px solid #D6DBDE;
+}
+
+.MC_DoShow_Title3 {
+WIDTH: 560;
+BACKGROUND: #FFF;
+PADDING: 5px;
+BORDER: 1px solid #D6DBDE;
+}
+/* ------------荣誉+营销+人才 内容表格背景、文字颜色定义------------ */
+.MC_HSJNr_Title {
+WIDTH: 560;HEIGHT: 300;
+BACKGROUND: #FFF;
+PADDING: 7px;
+LINE-HEIGHT: 150%;
+BORDER: 1px solid #D6DBDE;
+}
+/* ------------服务栏内容表格背景、文字颜色定义------------ */
+.MC_ServeNr_Title {
+WIDTH: 560;HEIGHT: 300;
+BACKGROUND: #FFF;
+PADDING: 5px;
+LINE-HEIGHT: 150%;
+BORDER: 1px solid #D6DBDE;
+}
+/* ------------中栏底部的css定义------------ */
+.MC_bottom_title {
+WIDTH: 560; HEIGHT: 26;
+BACKGROUND: #eeeeee;
+PADDING: 5px;
+BORDER-TOP: 0px solid #D6DBDE;BORDER-BOTTOM: 1px solid #D6DBDE;BORDER-LEFT: 1px solid #D6DBDE;BORDER-RIGHT: 1px solid #D6DBDE;
+}
+.MC_bottom_Td2 {
+WIDTH: 100%; HEIGHT: 3;
+BACKGROUND: #999;
+}
+/* ++++++++++++++++ 网页中部右栏的css定义结束 ++++++++++++++++ */
+
+/* ------------中栏背景图案的定义------------ */
+.main_tdbg {
+BACKGROUND: #FFF;
+LINE-HEIGHT: 150%;
+BORDER: 1px solid #D6DBDE;
+}
+/* 按钮的css定义:对应css中的“button”，这里为按钮的风格设置，可定义内容为背景、字体、颜色、边框等 */
+.button_temp {
+HEIGHT: 20px;
+FONT-SIZE: 9pt;
+BACKGROUND: #FFF;
+}
+/* 下拉列表框的css定义:对应css中的“select”，这里为下拉列表框的风格设置，可定义内容为背景、字体、颜色、边框等 */
+.select_Page {
+HEIGHT: 22px;
+BACKGROUND: #FFF;
+COLOR: #333;FONT-SIZE: 9pt;
+BORDER-TOP: 1px solid #666;BORDER-BOTTOM: 1px solid #666;BORDER-LEFT: 1px solid #666;BORDER-RIGHT: 1px solid #666;
+BORDER-COLOR: #666;
+}
+/* ------------分页栏表格背景、文字颜色定义------------ */
+.Fu_Page_title {
+WIDTH: 100%;HEIGHT: 25;
+BACKGROUND: #EEE;
+COLOR: #000;TEXT-ALIGN: center;
+BORDER: 3px;
+}
+.Fu_Page_td {
+HEIGHT: 22;
+PADDING-LEFT:2;
+COLOR: #000;FONT-WEIGHT: bold;
+}
+
+/* ------------ Copyright 2004-2005 ebossi.com - All Rights Reserved. ------------ */
+
+/* ==================FootLogoC1中的css定义================== */
+.FootLogoC1 {
+WIDTH: 766;HEIGHT: 2;
+BACKGROUND: #ECF0F1;
+}
+/* ==================FootAddress中的css定义================== */
+.FootAddress {
+WIDTH: 766;
+BACKGROUND: url(line.gif) #FDFDFD repeat-x;
+}
+.FootAddress_Td1 {
+WIDTH: 100%;HEIGHT: 30;
+}
+.FootAddress_Td2 {
+WIDTH: 100%;HEIGHT: 0;
+BACKGROUND: #6BAED6;
+}
+.FootAddress_Td3 {
+WIDTH: 100%;HEIGHT: 0;
+BACKGROUND: #6BAED6;
+}
+.FootAddressB {
+WIDTH: 100%;
+COLOR: #333;
+}
+/* ==================FootMenu中的css定义================== */
+.FootMenu {
+WIDTH: 766;
+BACKGROUND: #6BAED6;
+}
+.FootMenu_Td {
+HEIGHT: 25;
+COLOR: #FDFDFD;
+}
+/* ==================FootCopyright中的css定义开始================== */
+.FootCopyright {
+WIDTH: 766;
+BACKGROUND: #6BAED6;
+}
+.bottom_Td {
+HEIGHT: 25;
+COLOR: #FDFDFD;LINE-HEIGHT: 150%;
+}
+.bottom_TdHR {
+HEIGHT: 2;
+}
+
+/* ==================其它中的css定义================== */

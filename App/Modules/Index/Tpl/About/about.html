@@ -1,0 +1,98 @@
+<include file = "Common:head" />
+
+<div class="banner2">
+   <ul>
+      <li><img src="__PUBLIC__/images/n_banner4.jpg" /></li>
+   </ul>
+</div>
+<div class="main_auto">
+   <div class="main_auto_l" id="tab">
+        <h4>关于我们About us</h4>
+		<ul>
+		    <li class="active2"><a onClick="selectTag('div1',this)"  href="javascript:void(0)" onFocus="this.blur()">公司简介</a></li>
+			<li><a onClick="selectTag('div2',this)"  href="javascript:void(0)" onFocus="this.blur()">公司资质</a></li>
+			<li><a onClick="selectTag('div3',this)"  href="javascript:void(0)" onFocus="this.blur()">公司文化</a></li>
+		</ul>
+   </div>
+   <div class="main_auto_rg" id="div1" style="display:block;">
+       <h4><span><a href="#">首页</a>-<a href="#">关于我们</a>-<a href="#">公司简介</a></span></h4>
+	   <ul>
+	       新疆纳克西湾手工地毯开发有限公司位于和田市玉龙喀什镇，成立于2006年，民营企业，占地65亩，生产能力年产地毯4万平方米，企业现有职工528人，其中大中专以上学历10人，地毯工艺美术大师两人，高级技师、工程师各一人及各类技术人员15人，有和田地毯研发工作室136平方米，研发人员5人，注册商标为“纳克西湾”目前公司在农十四师皮山农场、和田监狱、阿拉尔监狱合作建立了三个较大规模的和田地毯手工编织点和在和田市玉龙喀什镇两个大队建立了和田地毯手工编织点，企业依照“公司法”制定了公司章程及各种管理制度，员工素质好，思想上进，技术高。
+           纳克西湾手工地毯在2006年中国国际家用纺织品设计大赛中荣获“产品设计”铜奖与“中国民族家纺优秀工艺奖”荣誉称号，在第十三届中国工艺美术师作品即国际艺术精品博览会上获得‘2012’“ 儒仕儒家. 百花杯心” 中国工艺美术精品奖大赛银奖。2006年至2008年连续三年在和田地区玉石节羊毛手工地毯博览会上荣获一等奖。新疆纳克西湾手工地毯开发有限公司2008年获得和田地区农业产业化重点龙头企业，2009又获得自治区农业产业化重点龙头企业称号，2010年6月被定为国家级非物质文化遗产维吾尔地毯织造技艺保护基地，2012年又获得自治区扶贫龙头企业， 2012年2月纳克西湾商标地毯获得新疆著名商标。2014年被和田市工商行政管理局评为2013-2014年度“守合同、重信用” 企业。
+	   </ul>
+   </div>
+   <div class="main_auto_rr" id="div2" style="display:none;">
+       <h4><span><a href="#">首页</a>-<a href="#">关于我们</a>-<a href="#">公司资质</a></span></h4>
+	   <ul>
+	       <div class="cap">
+		       <div class="ca"><a href="#"><img src="__PUBLIC__/images/r1.jpg" /></a></div>
+			   <div class="cp"><a href="#">荣誉证书</a></div>
+		   </div>
+		   <div class="cap">
+		       <div class="ca"><a href="#"><img src="__PUBLIC__/images/r2.jpg" /></a></div>
+			   <div class="cp"><a href="#">国家级非物质文化遗产</a></div>
+		   </div>
+		   <div class="cap">
+		       <div class="ca"><a href="#"><img src="__PUBLIC__/images/r3.jpg" /></a></div>
+			   <div class="cp"><a href="#">和田地区重点龙头企业</a></div>
+		   </div>
+		   <div class="cap">
+		       <div class="ca"><a href="#"><img src="__PUBLIC__/images/r4.jpg" /></a></div>
+			   <div class="cp"><a href="#">自治区重点龙头企业</a></div>
+		   </div>
+	   </ul>
+   </div>
+   <div class="main_auto_rg" id="div3" style="display:none;">
+       <h4><span><a href="#">首页</a>-<a href="#">关于我们</a>-<a href="#">公司文化</a></span></h4>
+	   <ul>
+	      本公司是一家集研发、生产、销售为一体的企业，经过多年成功的市场运作，以质优价廉、环保时尚的产品，为广大客户树立良好的商业形象。其产品图案别致，色泽鲜艳，环保时尚，全面满足不同消费者需求。主要生产360道、450道、540道、720道本色、花色地毯，真丝纯毛合织地毯，剪花地毯、艺术挂毯，图案设计、配色．品种多姿多彩，形成了五大系列，100多个花色品种，同时开展高级洗毯、平毯、烫毯，经过高级洗、平、烫毯后道工序整修美化整修以后才能充分显示出和田地毯特有的本色。诸如：丝绸般的光泽，柔滑丰满的手感，持久的弹性和光彩夺目标的色彩等。产品销往美国、英国、日本、土耳其、沙特阿拉伯等国家和地区。
+	   </ul>
+   </div>
+</div>
+
+<script>
+$(document).ready(function(){
+//幻灯片元素与类“menu_body”段与类“menu_head”时点击
+	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane p.menu_head").click(function(){
+		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});	
+});	
+</script>
+
+<script>
+	function selectTag(showContent,selfObj){
+  // 操作标签
+  var tag = document.getElementById("tab").getElementsByTagName("li");
+  //selfObj.parentNode.className = "selectTag";
+  $(selfObj).parent().addClass('active2').siblings().removeClass('active2');
+  // 操作内容
+  for(i=1; j=document.getElementById("div"+i);i++){
+    j.style.display = "none";
+  }
+  document.getElementById(showContent).style.display = "block";
+}
+</script>
+<include file = "Common:foot" />
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

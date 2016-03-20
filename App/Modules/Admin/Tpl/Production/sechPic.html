@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>产品检索</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/common.css" />
+	<script type="text/javascript" src='__PUBLIC__/js/jquery-1.8.2.min.js'></script>
+	<script type="text/javascript" src='__PUBLIC__/js/common.js'></script>
+</head>
+<body>
+	<div class='status'>
+		<span>产品检索</span>
+	</div>
+	<div style='width:600px;text-align:center;margin : 20px auto;'>
+		<form action="__SELF__" method='get'>
+			检索方式：
+			<select name="type">
+				<option value="0">产品分类</option>
+			</select>
+			<input type="text" name='sech'/>
+			<input type="submit" value='' class='see'/>
+		</form>
+	</div>
+	<table class="table" style="text-align:center;">
+		<if condition='isset($production) && !$production'>
+			<tr>
+				<td align='center'><img src='__PUBLIC__/images/noseach.jpg'/>没有检索到相关产品</td>
+			</tr>
+		<else/>
+			<tr>
+			<th>ID</th>
+			<th>产品分类</th>
+			<th>产品编号</th>
+			<th>产品图片预览</th>
+			<th>发布时间</th>
+			<th>操作</th>
+		</tr>
+			<foreach name='production' item='v'>
+			<tr>
+				<td>{$v.id}</td>
+				<td>{$v.type}</td>
+				<td>{$v.title}</td>
+				</td>
+				<td style="width:300px;">
+					<div style="height:135px; width:145px; margin-left:2px;"><img style="height:135px; width:295px;" src='
+                            __ROOT__/uploads/Pic/{$v.medium}'>
+                   </div>
+				</td>
+				<td>{$v.addtime|date='y-m-d H:i', ###}</td>
+				<td style="width:165px;">
+					<div style="width:160px; margin:auto;">
+					<a href="{:U('delPic', array('id' => $v['id']))}" class='del'></a>
+					<a href="{:U('savePic', array('id' => $v['id']))}" class='mod'></a>
+					</div>
+				</td>
+			</tr>
+		</foreach>
+		</if>
+	</table>
+</body>
+</html

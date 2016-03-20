@@ -1,0 +1,94 @@
+body {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #333333;
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+table,p,div,span {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #333333;
+}
+.Px14 {
+	font-family: "宋体";
+	font-size: 14px;
+}
+a{
+	font-color:#333333;
+	font-unline:no;
+	font-family: "宋体";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	line-height: 120%;
+
+
+}
+a:hover{
+	Font-unline:yes;
+	font-family: "宋体";
+	color: #FFFFFF;
+	text-decoration: underline;
+	background-color: #333333;
+}
+
+.HeaderTdStyle {
+	background: #D7FFFF;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #666699;
+
+}
+.TdOver {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #FFFFFF;
+	cursor: default;
+}
+.TdDown {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999999;
+	border-right-color: #ffffff;
+	border-bottom-color: #ffffff;
+	border-left-color: #999999;
+	cursor: default;
+}
+.TdOut {
+	border: 1px solid #d4d0c8;
+
+}
+.MenuBg {
+	background-color: #999999;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #666666;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #666666;
+}
+

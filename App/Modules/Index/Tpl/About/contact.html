@@ -1,0 +1,84 @@
+<include file = "Common:head" />
+
+<div class="banner2">
+   <ul>
+      <li><img src="__PUBLIC__/images/n_banner.jpg" /></li>
+   </ul>
+</div>
+<div class="main_auto">
+   <div class="main_auto_l" id="tab">
+        <h4>联系我们Contact us</h4>
+		<ul>
+		    <li class="active2"><a onClick="selectTag('div1',this)"  href="javascript:void(0)" onFocus="this.blur()">联系我们</a></li>
+		</ul>
+   </div>
+   <div class="main_auto_rg">
+       <h4><span><a href="#">首页</a>--<a href="#">联系我们</a></span></h4>
+	   <ul> 
+			<div id="firstpane" class="menu_list">
+				<p class="menu_head current">公司位置</p>
+				<div class="menu_body">
+					<li>和田市...</li>
+				</div>
+				<p class="menu_head current">各个部门联系电话</p>
+				<div class="menu_body">
+					<li>销售部：</li>
+					<li>市场部：</li>
+					<li>技术部：</li>
+					<li>后勤部：</li>
+					<li>售后服务部：</li>
+				</div>
+				<p class="menu_head current">交易流程简介</p>
+				<div class="menu_body">
+					<li>待完成...</li>
+				</div>
+			</div><!--firstpane end-->
+	   </ul>
+   </div>
+</div>
+
+<script>
+$(document).ready(function(){
+//幻灯片元素与类“menu_body”段与类“menu_head”时点击
+	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane p.menu_head").click(function(){
+		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});	
+});	
+
+	function selectTag(showContent,selfObj){
+  // 操作标签
+  var tag = document.getElementById("tab").getElementsByTagName("li");
+  //selfObj.parentNode.className = "selectTag";
+  $(selfObj).parent().addClass('active2').siblings().removeClass('active2');
+  // 操作内容
+  for(i=1; j=document.getElementById("div"+i);i++){
+    j.style.display = "none";
+  }
+  document.getElementById(showContent).style.display = "block";
+}
+</script>
+
+<include file = "Common:foot" />
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

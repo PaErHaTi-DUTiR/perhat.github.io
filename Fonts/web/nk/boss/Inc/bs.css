@@ -1,0 +1,51 @@
+A:visited{TEXT-DECORATION:none}
+A:link{text-decoration:none}
+A:hover{TEXT-DECORATION:underline}
+
+DIV,FORM,P,TD,BODY{FONT-SIZE:9pt;}
+BODY{
+SCROLLBAR-HIGHLIGHT-COLOR:buttonface;
+SCROLLBAR-SHADOW-COLOR:buttonface;
+SCROLLBAR-3DLIGHT-COLOR:buttonhighlight;
+SCROLLBAR-TRACK-COLOR:eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR:buttonshadow
+}
+
+
+#TableTitleLink A:link,#TableTitleLink A:visited{COLOR:333333;}
+.a1{BACKGROUND-IMAGE:url('../images/titlebg.gif');COLOR:333333;}
+.a2{BACKGROUND-COLOR: 9F9F9F;}
+.a3{BACKGROUND-COLOR: DCDDDE;}
+.a4{BACKGROUND-COLOR: DCDDDE;}
+
+.menuskin {
+	BORDER-RIGHT: #0A2999 1px solid ;
+	BORDER-TOP: #0A2999 1px solid;
+	BORDER-LEFT: #0A2999 1px solid;
+	BORDER-BOTTOM: #0A2999 1px solid;
+	BACKGROUND-IMAGE: url(menubg.gif);
+	POSITION: absolute;
+	VISIBILITY: hidden;
+}
+
+.menuitems {
+	PADDING-RIGHT: 1px;
+	PADDING-TOP: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-BOTTOM: 1px;
+	MARGIN: 2px;
+	font-size:9pt;
+	line-height:14pt;
+}
+#mouseoverstyle {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+	BORDER-RIGHT: #0B008B 1px solid;
+	BORDER-TOP: #0B008B 1px solid;
+	BORDER-LEFT: #0B008B 1px solid;
+	BORDER-BOTTOM: #0B008B 1px solid;
+	BACKGROUND-COLOR: #FFEEC2 
+}
+.menuskin A {PADDING-RIGHT:10px;PADDING-LEFT:30px;}

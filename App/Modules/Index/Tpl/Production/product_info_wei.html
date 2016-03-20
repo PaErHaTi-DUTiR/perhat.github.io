@@ -1,0 +1,67 @@
+<include file = "Common:head" />
+
+<div class="banner2">
+   <ul>
+      <li><img src="__PUBLIC__/images/n_banner2.jpg" /></li>
+   </ul>
+</div>
+<div class="main_auto">
+   <div class="main_auto_l" id="tab">
+        <h4>产品中心Product</h4>
+		<ul>
+		    <li class="active2"><a onClick="selectTag('div1',this)"  href="javascript:void(0)" onFocus="this.blur()">轮胎</a></li>
+			<li><a onClick="selectTag('div2',this)"  href="javascript:void(0)" onFocus="this.blur()">物流</a></li>
+			<li><a onClick="selectTag('div3',this)"  href="javascript:void(0)" onFocus="this.blur()">仓储</a></li>
+		</ul>
+   </div>
+   <div class="main_auto_info">
+       <h4><span><a href="#">首页</a>-<a href="#">产品中心</a>-<a href="#">轮胎</a></span></h4>
+	   <ul>
+	      <div class="title2">
+		       <h1>HX—ST969</h1><span>发布时间：2013-9-18；来源：陕西恒翔实业</span>
+		  </div>
+		  <div class="artitle">
+		     <div class="tu"><img src="__PUBLIC__/images/lt.jpg" /></div>全钢子午线轮胎有内系列(中、短途承载型)适用于良好路面的普通货运卡车及牵引车，是新一代低磨耗、高里程的轮胎花纹。主要特点：特有的胎面加深、价款花纹设计提供了强劲的驱动和良好的制动性能：优化和加强的胎圈设计：肩部的花纹沟设计，保证了轮胎的良好散热性。
+		  </div>
+		  <div class="page_l">
+		      <div class="page_ll">上一条：<a href="#">设计提供了强劲的驱动和良好的制</a></div>
+			  <div class="page_lr">下一条：<a href="#">胎圈设计：肩部的花纹沟</a></div>
+		  </div>
+	   </ul>
+   </div>
+</div>
+<script>
+	function selectTag(showContent,selfObj){
+  // 操作标签
+  var tag = document.getElementById("tab").getElementsByTagName("li");
+  //selfObj.parentNode.className = "selectTag";
+  $(selfObj).parent().addClass('active2').siblings().removeClass('active2');
+  // 操作内容
+  for(i=1; j=document.getElementById("div"+i);i++){
+    j.style.display = "none";
+  }
+  document.getElementById(showContent).style.display = "block";
+}
+</script>
+<include file = "Common:foot" />
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
